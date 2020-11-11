@@ -38,4 +38,4 @@ The first thing to notice is why they used `replaceArray` over a far more compre
 
 This does give us an avenue to attack, but the validator requires our string starts with a valid command. So what if we try ls \`whoami\`? Well, that will execute code. But displays nothing on our end other than an error. I wonder if theres any way to ＥＣＨＯ out the output (sorry, not sorry). Typing echo `whoami` into the request gives us output. If you want to try this yourself, it's included in the commands tab in my [DVLA](http://dvla.test/command) project.
 
-There is part one about command vulnerabilites. In the next [post]({% post_url 2020-11-10-command-injection-ctf-prt-2-file-inclusion %}) about how we can use this issue to achieve a file inclusion vulerability.
+This is part one about command vulnerabilites. In [part two]({% post_url 2020-11-10-command-injection-ctf-prt-2-file-inclusion %}) I talk about how we can use this issue to achieve a file inclusion vulerability.
